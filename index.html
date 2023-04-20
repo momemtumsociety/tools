@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MS - Countdown Timer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="Icon/ms-logo_v3.png" type="image/icon type">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="countdown-timer">
+            <div class="features-container">
+                <div class="section-content">
+                    <div class="content-header">
+                        <h2>MS Countdown Timer</h2>
+                        <p>Make sure the volume is turned on before starting to use it.</p>
+                    </div>
+                    <div class="grid-container">
+                        <section class="small-container">
+                            <div class="container-box-2">
+                                <div class="progress-bar">
+                                    <p id="countdown1">0:00</p>
+                                    <div id="progress1" class="progress"></div>
+                                    <button onclick="stopTimer1()" class="stop-button" id="stop-button1">Stop</button>
+                                </div>
+                            </div>
+                            <div class="container-box">
+                                <div class="title">
+                                    <p>Boiling Water.</p>
+                                </div>
+                                <div class="selector">
+                                    <div class="selector-container">
+                                        <div class="selector-content">
+                                            <select id="time1" class="selector-dropdown">
+                                                <option value="1">1</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>
+                                            <p class="selector-unit">minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button onclick="startTimer1()" id="start-button1">Start</button>
+                                    <button onclick="resetTimer1()" id="reset-button1" class="reset">Reset</button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="small-container">
+                            <div class="container-box-2">
+                                <div class="progress-bar">
+                                    <p id="countdown2">0:00</p>
+                                    <div id="progress2" class="progress"></div>
+                                    <button onclick="stopTimer2()" class="stop-button" id="stop-button2">Stop</button>
+                                </div>
+                            </div>
+                            <div class="container-box">
+                                <div class="title">
+                                    <p>Steaming.</p>
+                                </div>
+                                <div class="selector">
+                                    <div class="selector-container">
+                                        <div class="selector-content">
+                                            <select id="time2" class="selector-dropdown">
+                                                <option value="1">1</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="15">15</option>
+                                            </select>
+                                            <p class="selector-unit">minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button onclick="startTimer2()" id="start-button2">Start</button>
+                                    <button onclick="resetTimer2()" id="reset-button2" class="reset">Reset</button>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="small-container">
+                            <div class="container-box-2">
+                                <div class="progress-bar">
+                                    <p id="countdown3">0:00</p>
+                                    <div id="progress3" class="progress"></div>
+                                    <button onclick="stopTimer3()" class="stop-button" id="stop-button3">Stop</button>
+                                </div>
+                            </div>
+                            <div class="container-box">
+                                <div class="title">
+                                    <p>Cooling.</p>
+                                </div>
+                                <div class="selector">
+                                    <div class="selector-container">
+                                        <div class="selector-content">
+                                            <select id="time3" class="selector-dropdown">
+                                                <option value="1">1</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="30">30</option>
+                                            </select>
+                                            <p class="selector-unit">minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button onclick="startTimer3()" id="start-button3">Start</button>
+                                    <button onclick="resetTimer3()" id="reset-button3" class="reset">Reset</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section id="global-footer">
+            <div class="global-footer-content">
+                <div class="global-footer-mini">
+                    <div class="global-footer-mini-version">
+                        V1.0.5 MS20230419
+                    </div>
+                    <div class="global-footer-mini-legal">
+                        <div class="global-footer-mini-legal-copyright">Copyright © 2023 Momentum Society.  All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="countdown-audio">
+            <audio id="audio1" preload="metadata">
+                <source src="Audio/Radar.ogg" type="audio/ogg">
+                <source src="Audio/Radar.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="audio2" preload="metadata">
+                <source src="Audio/Radar.ogg" type="audio/ogg">
+                <source src="Audio/Radar.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="audio3" preload="metadata">
+                <source src="Audio/Radar.ogg" type="audio/ogg">
+                <source src="Audio/Radar.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
